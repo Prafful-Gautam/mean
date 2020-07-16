@@ -12,6 +12,7 @@ mongoose.connect(
 "mongodb+srv://Prafful:B83r2oxs7yJYkphT@cluster0-txvo9.mongodb.net/mean?retryWrites=true&w=majority",
 { useNewUrlParser: true,useCreateIndex: true, useUnifiedTopology:true, useFindAndModify: false })
     .then(() => {
+
         console.log('Connected to database');
     })
     .catch((err) => {
