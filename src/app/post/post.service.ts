@@ -44,6 +44,7 @@ private updatedPost = new Subject<Post[]>();
     postData.append("title", title);
     postData.append("content",content);
     postData.append("image", image, title)
+    console.log(postData)
     this.http.post<{message:string, post:Post}>("http://localhost:3000/app/posts", postData)
       .subscribe(responseData => {
         const post:Post = {
